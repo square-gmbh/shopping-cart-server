@@ -1,0 +1,37 @@
+{
+    "thumbnails": {
+        "computer_parts": "res/computer.png",
+        "portables": "res/scaled-portables.png",
+        "electrocasnice": "res/house.png",
+        "electronice": "res/scaled-computer-parts.png",
+        "video_cards": "res/video-cards.png",
+        "processors": "res/cpu.png",
+        "tablets": "res/tablet.png",
+        "phones": "res/phone.png",
+        "ssds": "res/ssd.png",
+        "masini-spalat-rufe": "res/masina-spalat.png",
+        "aparate-frigorifice": "res/fridge.png",
+        "televizoare": "res/tv.png",
+        "foto": "res/camera.png",
+        "video": "res/video.png"
+    },
+    "backgrounds": {
+        "computer_parts": {
+            "light": "#f39c12",
+            "dark": "#e67e22"
+        },
+        "portables": {
+            "light": "#2ecc71",
+            "dark": "#27ae60"
+        },
+        "electronice": {
+            "light": "#3498db",
+            "dark": "#2980b9"
+        },
+        "electrocasnice": {
+            "light": "#e74c3c",
+            "dark": "#c0392b"
+        }
+    },
+    "limit": 10
+}

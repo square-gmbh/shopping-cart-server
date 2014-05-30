@@ -1,0 +1,15 @@
+{
+    "name": "shopping-cart-server",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "mongodb": "*"
+    },
+    "version": "0.0.1-1",
+    "engines": {
+        "node": "v0.10.x"
+    },
+    "subdomain": "scs"
+}
