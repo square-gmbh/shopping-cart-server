@@ -238,6 +238,9 @@ app.post("/", function (req, res) {
 });
 
 app.post("/getMappings", function (req, res) {
+    var date = new Date();
+    log.filename = 'server_log_' + formatDate(date) + '.txt';
+    ACTIVE_COL = ('0' + date.getDate()).slice(-2) + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + date.getFullYear();
 
     connect('scanner', function (db) {
         find(db, 'mappings_' + ACTIVE_COL, {}, {}, function (docs) {
