@@ -209,10 +209,6 @@ app.post("/", function (req, res) {
     
     var subclass = req.body.subclass;
     var itemClass = req.body["class"];
-    var skip = req.body.skip || 0;
-
-    // limit
-    var limit = config.limit;
 
     var db = 'scanner';
    
@@ -221,14 +217,9 @@ app.post("/", function (req, res) {
         'subclass_id': subclass
     };
 
-    var options = {
-        'limit': limit,
-        'skip': parseInt(skip)
-    };
-
     connect(db, function (db) {
 
-        find(db, 'scan_products_' + ACTIVE_COL, query, options, function (docs) {
+        find(db, 'scan_products_' + ACTIVE_COL, query, {}, function (docs) {
             res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
             res.end(JSON.stringify(docs)); 
         });
