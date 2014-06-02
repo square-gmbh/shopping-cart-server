@@ -13,7 +13,11 @@
         "aparate-frigorifice": "res/fridge.png",
         "televizoare": "res/tv.png",
         "foto": "res/camera.png",
-        "video": "res/video.png"
+        "video": "res/video.png",
+        "gaming": "res/gaming.png",
+        "pc_games": "res/pc_games.png",
+        "software": "res/software.png",
+        "antivirus": "res/antivirus.png"
     },
     "backgrounds": {
         "computer_parts": {
@@ -31,6 +35,14 @@
         "electrocasnice": {
             "light": "#e74c3c",
             "dark": "#c0392b"
+        },
+        "gaming": {
+            "light": "#34495e",
+            "dark": "#2c3e50"
+        },
+        "software": {
+            "light": "#1abc9c",
+            "dark": "#16a085"
         }
     },
     "limit": 10
