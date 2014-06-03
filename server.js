@@ -206,16 +206,10 @@ app.configure(function () {
 });
 
 app.post("/", function (req, res) {
-    
-    var subclass = req.body.subclass;
-    var itemClass = req.body["class"];
 
     var db = 'scanner';
    
-    var query = {
-        'class_id': itemClass,
-        'subclass_id': subclass
-    };
+    var query = req.body;
 
     connect(db, function (db) {
 
